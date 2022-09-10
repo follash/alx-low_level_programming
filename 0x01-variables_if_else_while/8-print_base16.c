@@ -1,20 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Print the numbers of the base 16 in lowercase
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char digit;
+	int d;
+	char low;
 
-	for (digit = '0'; digit <= '9'; digit++)
-		putchar(digit);
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
 
-	for (digit = 'a'; digit <= 'f'; digit++)
+	for (low = 'a'; low <= 'f'; low++)
 
-		putchar(digit);
+		putchar(low);
 
 		putchar('\n');
 
