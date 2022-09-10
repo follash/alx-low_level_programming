@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	chat digits;
+	char digits;
 
 	for (digit = '0'; digit <= '9'; digit++)
 		putchar(digit);
