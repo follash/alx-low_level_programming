@@ -17,11 +17,11 @@ int main(void)
 			putchar(d);
 			if (d != '9')
 			{
-			purchar (',');
-			purchar((' ');
+			putchar (',');
+			putchar((' ');
 					}
 					}
-					purchar('\n');
+					putchar('\n');
 
 					return (0);
 }
