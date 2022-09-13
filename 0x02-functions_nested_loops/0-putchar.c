@@ -1,8 +1,7 @@
-#include <stdio.h> 
+#include "main.h"
 
 /**
- * main - Entry point
- *Description: write a program putchar
+ * main - print putchar
  * Return: Always 0 (Success)
  */
 
