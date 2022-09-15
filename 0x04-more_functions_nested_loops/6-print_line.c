@@ -1,16 +1,14 @@
 #include "main.h"
-
 /**
- * print_line - entry point
- *
- * Description: Prints lines
- * @n: numbers of lines
+ * print_line - prints a line n char long~
+ *@n: length of line
+ * 
  * Return: void
  */
 
 void print_line(int n)
 {
-	int num-lines;
+	int i;
 
 	if (n <= 0)
 	{
@@ -18,7 +16,7 @@ void print_line(int n)
 	}
 	else
 	{
-		for (num_lines = 1; num_lines <= n; num_lines++)
+		for (i = 1; i <= n; i++)
 		{
 			_putchar('_');
 		}
