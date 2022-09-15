@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_line - prints a line n char long~
+ * print_line - prints a line n chars long~
  *@n: length of line
  * 
  * Return: void
