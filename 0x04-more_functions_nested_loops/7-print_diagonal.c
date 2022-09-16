@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
- * print_diagonal - prints a line n chars long
- *@n: number of \
- * 
+ * print_diagonal - entry point
+ *
+ * Description: Prints diagonals
+ *@n: number of spaces
  * Return: void
  */
 
 void print_diagonal(int n)
 {
-	int i, space;
+	int row, num_lines;
 
 	if (n <= 0)
 	{
@@ -16,14 +18,16 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (i = 0; i <= n; i++)
+		for (row = 1; row <= n; row++)
 		{
-				for (space = 0; space < i; space++)
+			if (row > 1)
+			{
+				for (num_lines = 1; num_lines <= 1; num_lines++)
 				{
 					_putchar(' ');
 				}
 			}
-			_putchar(92);
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
