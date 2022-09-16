@@ -24,7 +24,7 @@ int main(void)
 /**
  * isPrime - analise if a number is prime or not
  * @n: number to check
- * Return:true if it is prime false if not
+ * Return: true if it is prime false if not
  */
 int isPrime(long int n)
 {
@@ -59,7 +59,7 @@ long int biggestFactor(long int a)
 {
 	long int i, factor;
 
-	factor = a;;
+	factor = a;
 	for (i = 2; i <= factor; i++)
 	{
 		if (isPrime(factor) == 1)
@@ -68,7 +68,8 @@ long int biggestFactor(long int a)
 		}
 		else
 		{
-			if ((factor % i == 0) && (isPrime(i) == 1)){
+			if ((factor % i == 0) && (isPrime(i) == 1))
+			{
 				factor = factor / i;
 				continue;
 			}
