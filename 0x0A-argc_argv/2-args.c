@@ -15,13 +15,13 @@ void print_array_elements(char *str);
 int main(int argc, char *argv[])
 {
 	int i;
-	
+
 	for (i = 0; i < argc; i++)
 	{
 		print_array_elements(argv[i]);
 		_putchar('\n');
 	}
-	
+
 	return (0);
 }
 
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 void print_array_elements(char *str)
 {
 	int i = 0;
-	
+
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);

@@ -46,7 +46,7 @@ int _atoi(char *s)
 {
 	int sign_cache = 1;
 	int result = 0;
-	
+
 	while (s[0] != '\0')
 	{
 		if (s[0] == '-')
@@ -55,10 +55,10 @@ int _atoi(char *s)
 			result = (result * 10) + (s[0] - '0');
 		else if (result)
 			break;
-		
+
 		s++;
 	}
-	
+
 	return (result * sign_cache);
 }
 
@@ -88,19 +88,19 @@ int multiply_two_nums(int num1, int num2)
 void print_number(int n)
 {
 	unsigned int n1;
-	
+
 	n1 = n;
-	
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n1 = -n;
 	}
-	
+
 	if (n1 / 10 != 0)
 	{
 		print_number(n1 / 10);
 	}
-	
+
 	_putchar((n1 % 10) + '0');
 }
